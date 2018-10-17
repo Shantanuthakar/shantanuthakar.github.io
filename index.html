@@ -95,9 +95,16 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Global Planning for Mobile Manipulators</h3>
+              <h3 class="mb-0">Path Planning for Mobile Manipulators</h3>
+              <div class="subheading mb-3">Summary </div>
               <p class="lead mb-0">
-
+                We introduce an algorithm for path planning for a mobile manipulator in a global sense. The mobile manipulator has to start from an initial location, pick up a part and go to the goal location in the minimum time. We define Grasping Area as an area around the part, in which if the robot is located, the manipulator can reach to grasp the part. The planning algorithm for the mobile base is a search based scheme with heuristics designed to bias the search towards the Grasping Area initially and then towards the goal after the part has been picked up. The time taken by the manipulator to pick up the part is added to the cost to go of certain nodes in the search tree. For the manipulator, we have implemented an inverse kinematics based planner.<br/>
+                Key Points :
+                <ul class="lead mb-3">
+                  <li class="lead mb-0">A single planner for the complete path</li>
+                  <li>Any Manipulator planner can be integrated with this</li>
+                  <li>Capable of picking up parts while mobile base is translating, turning or stationary</li>
+                </ul>
               </p>
             </div>
               <div class="resume-date text-md-right">
