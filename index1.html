@@ -92,111 +92,75 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="research">
         <div class="my-auto">
           <h2 class="mb-5">Research</h2>
+
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Global Trajectory Planning for Part Transport using Mobile Manipulators</h3>
+              <h3 class="mb-0">Path Planning for Mobile Manipulators</h3>
               <div class="subheading mb-3">Summary </div>
               <p class="lead mb-0">
                 We introduce an algorithm for path planning for a mobile manipulator in a global sense. The mobile manipulator has to start from an initial location, pick up a part and go to the goal location in the minimum time. We define Grasping Area as an area around the part, in which if the robot is located, the manipulator can reach to grasp the part. The planning algorithm for the mobile base is a search based scheme with heuristics designed to bias the search towards the Grasping Area initially and then towards the goal after the part has been picked up. The time taken by the manipulator to pick up the part is added to the cost to go of certain nodes in the search tree. For the manipulator, we have implemented an inverse kinematics based planner.<br/>
                 Key Points :
                 <ul class="lead mb-3">
-                  <li style="color:#343a40;font-size:1.15rem;">A single planner for the motion from start to goal via grasping area</li>
-                  <li style="color:#343a40;font-size:1.15rem;">Any Manipulator planner can be integrated with this</li>
-                  <li style="color:#343a40;font-size:1.15rem;">Capable of picking up parts while mobile base is translating, turning or stationary</li>
+                  <li class="lead mb-0">A single planner for the complete path</li>
+                  <li>Any Manipulator planner can be integrated with this</li>
+                  <li>Capable of picking up parts while mobile base is translating, turning or stationary</li>
                 </ul>
-                </p>
-                <p class="lead mb-0">The paper can be found <a href="ThakarCASE2018.pdf">here</a></p><br/>
-                <iframe   margin:0 width="512" height="285" src="https://www.youtube.com/embed/B4SumiabVus" frameborder="0" ; allowfullscreen></iframe>
+              </p>
             </div>
               <div class="resume-date text-md-right">
                 <span class="text-primary">Ongoing</span>
               </div>
+          </div>
+          <iframe  width="512" height="285" src="https://www.youtube.com/embed/B4SumiabVus" frameborder="0" allowfullscreen></iframe>
+          <!-- <object width="425" height="344" data="https://www.youtube.com/embed/B4SumiabVus"></object> -->
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Active Learning for High Speed Grasping under Pose Uncertainty</h3>
+              <p class="lead mb-0">
+
+
+              </p>
+            </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">Ongoing</span>
               </div>
-      <!--     </div>
-          <iframe  vspace="" margin:0 width="512" height="285" src="https://www.youtube.com/embed/B4SumiabVus" frameborder="0" ;padding: 0px 0; allowfullscreen></iframe>
-          </div> -->
+          </div>
 
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Trajectory Planning of Mobile Manipulators for Time-Optimal Part-Pick Up</h3>
-               <div class="subheading mb-3">Summary </div>
               <p class="lead mb-0">
-                  We have developed an optimization based algorithm for trajectory planning of mobile manipulator, such that the gripper attached to the end-effector follows a trajectory so as to have a desired probability of grasping of a part under pose uncertainty. Each DoF of the robot is a polynomial in time and the parameters are the optimization variables. The constraints on the system include the non-holonomic motion of the mobile base, the joint and rate limits for each joint, the gripper velocity constraints and the minimum probability constraints for successful grasping. The objective function is the trajectory time. Finally, a sequential refinement based non-linear optimization is implemented by successively adding constraints.
-                <br/>
-                Key Points :
-                <ul class="lead mb-3">
-                  <li style="color:#343a40;font-size:1.15rem;">This is a local planner and can be used as a motion primitive for the previous global graph search based planner</li>
-                  <li style="color:#343a40;font-size:1.15rem;">The mobile robot compensates for the motion of the gripper</li>
-                  <li style="color:#343a40;font-size:1.15rem;">Results in picking of parts while in motion</li>
-                </ul>
-                </p><br/>
-                <!-- <p class="lead mb-0">The submitted paper can be found <a href="thakar-2019-icra.pdf">here</a></p><br/> -->
-                <iframe   margin:0; width="512" height="285" src="https://www.youtube.com/embed/8fWLFA97TCo" frameborder="0" ; allowfullscreen></iframe>
-            </div>
-              <div class="resume-date text-md-right">
-                <span class="text-primary">Ongoing</span>
-              </div>
-              </div><br/>
 
-          <!-- <object width="425" height="344" data="https://www.youtube.com/watch?v=8fWLFA97TCo"></object> -->
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Active Learning for High Speed Grasping under Pose Uncertainty</h3>
-              <div class="subheading mb-3">Summary </div>
-              <p class="lead mb-0">
-                The probability constraints mentioned in the previous summary is described here. We build a probability meta model for successful grasping of parts under pose uncertainty with a moving gripper for various gripper speeds and gripper closing speeds. For this we use SVM based active learning to create a boundary between successful and failed part poses for a pair of gripper speed and closing speed. This vastly decreases the number of simulations required to determine the probability for a given level of uncertainty as compared to Monte Carlo simulations. A details of this and the above trajectory planning is shown in the following video.
-              </p><br/>
-                <video controls
-                       muted
-                       src="icra2019thakar_final_video.mp4"
-                       width="512"
-                       height="285"
-                       frameborder="0">
-                    Sorry, your browser doesn't support embedded videos.
-                </video>
+              </p>
             </div>
               <div class="resume-date text-md-right">
                 <span class="text-primary">Ongoing</span>
               </div>
           </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Constrained Trajectory Planning for High DoF Systems (In collaboration)</h3>
-              <div class="subheading mb-3">Summary </div>
               <p class="lead mb-0">
-                We pose the problem of path-constrained trajectory generation for synchronous motion of multi-robot systems as a non-linear optimization problem. Our method determines appropriate parametric representation for the configuration variables, generates an approximate solution as a starting point for the optimization method, and uses successive refinement techniques to solve the problem in a computationally efficient manner. We have demonstrated the effectiveness of the proposed method on challenging simulation and physical experiments with high degrees of freedom robotic systems.
-              </p><br/>
-              <iframe   margin:0; width="512" height="285" src="https://www.youtube.com/embed/bD7FItjOWY0" frameborder="0" ; allowfullscreen></iframe>
+
+              </p>
             </div>
               <div class="resume-date text-md-right">
                 <span class="text-primary">Ongoing</span>
               </div>
           </div>
-
 
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Virtual Target based Path Following</h3>
-              <div class="subheading mb-3">Summary </div>
               <p class="lead mb-0">
-                  A new guidance logic for UAV path following using a virtual target is presented. The
-                  desired heading of the UAV follows an instantaneous circular arc which is tangential to
-                  the path at the virtual target position. Considering straight line and circular paths, a
-                  linear analysis of the resulting error dynamics presents a faster convergence as compared
-                  to existing methods. With no overshoot in the response, the method presents smooth
-                  following for higher look-ahead distances with respect to the virtual target. Comparative
-                  simulations are carried out complying with the analytic findings. The work highlights a
-                  simple guidance logic with a faster convergence and greater robustness with respect choice
-                  of the virtual target.
-              </p><br/>
-          	<p class="lead mb-0">The paper can be found <a href="aiaa_paper.pdf">here</a></p><br/>
-          	<img width="690" height="280" src="tan_guidance.png" alt="">
+
+              </p>
             </div>
             <div class="resume-date text-md-right">
                 <span class="text-primary">Aug 2015 - Mar 2016</span>
             </div>
-          </div><br/>
+          </div>
 
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
@@ -214,7 +178,7 @@
       </section>
 
       <hr class="m-0">
-<!--
+<!-- 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
         <div class="my-auto">
           <h2 class="mb-5">Education</h2>
