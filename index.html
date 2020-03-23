@@ -169,7 +169,8 @@
               <div class="subheading mb-3">Summary </div>
               <p class="lead mb-0">
                 The probability constraints mentioned in the previous summary is described here. We build a probability meta model for successful grasping of parts under pose uncertainty with a moving gripper for various gripper speeds and gripper closing speeds. For this we use SVM based active learning to create a boundary between successful and failed part poses for a pair of gripper speed and closing speed. This vastly decreases the number of simulations required to determine the probability for a given level of uncertainty as compared to Monte Carlo simulations. A details of this and the above trajectory planning is shown in the following video.
-              </p><br/>
+			  </p><br/>
+			  <p class="lead mb-0">The paper can be found<a href="ThakarICRA2019.pdf">here</a></p><br/>
                 <video controls
                        muted
                        src="icra2019thakar_final_video.mp4"
@@ -227,9 +228,17 @@
               <h3 class="mb-0">Sampling-based point-to-point motion planning for nonholonomic mobile manipulators</h3>
               <div class="subheading mb-3">Summary </div>
               <p class="lead mb-0">
-                We present a hybrid sampling-based bi-directional algorithm to determine feasible motion plans for non-holonomic mobile manipulators. We perform sampling in the workspace of the robot for the end-effector as well as in the configuration space. The workspace sampling helps in generating smoother motions and configuration space sampling helps in maintaining the diversity in robot configurations needed for successful connections between trees. Further, we utilize focused sampling in the workspace as well as in a configuration subspace to accelerate the tree growth towards the respective goals. These methods, along with rules for connecting the two trees in the hybrid sampling algorithm, reduces computation time significantly compared to the existing methods when tested for challenging transportation tasks in complex environments.
+                Determining a feasible path for a nonholonomic mobile manipulator operating in congested environments is challenging. Sampling-based methods, especially bi-directional tree search based approaches are amongst the most promising candidates for quickly finding feasible paths. However, sampling uniformly when using these methods may result in high computation time for nonholonomic mobile manipulator motion planning. This paper introduces two techniques to accelerate the motion planning. The first one is coordinated focusing for the manipulator and the mobile base based on the information from robot surroundings. The second one is a heuristic for making connections between the two search trees, which is challenging owing to the nonholonomic constraints on the mobile base. Incorporating these two techniques into the bi-directional RRT framework, results in about 5x faster and 10x more successful computation of paths as compared to the baseline method.
                 </p><br/>
                 <video controls
+                       muted
+                       src="iros_2020_final_submitted.mp4"
+                       width="512"
+                       height="285"
+                       frameborder="0">
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+				<video controls
                        muted
                        src="ICRA_2020_VIDEO_2_comp.mp4"
                        width="512"
